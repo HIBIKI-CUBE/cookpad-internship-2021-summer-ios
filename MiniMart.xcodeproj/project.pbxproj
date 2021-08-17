@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		11FD9C802692A79700BBCD33 /* MiniMartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9C7F2692A79700BBCD33 /* MiniMartUITests.swift */; };
 		11FD9CA62692B3A700BBCD33 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9CA52692B3A700BBCD33 /* UserDefaults+Codable.swift */; };
 		11FD9CB72692C4BE00BBCD33 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9CB62692C4BE00BBCD33 /* RemoteImage.swift */; };
+		B66931FD26CB51D2007FB68B /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = B66931FC26CB51D2007FB68B /* Apollo */; };
+		B66931FF26CB548E007FB68B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66931FE26CB548E007FB68B /* API.swift */; };
+		B669320126CB54D1007FB68B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320026CB54D1007FB68B /* Network.swift */; };
+		B669320326CB5B1F007FB68B /* ProductListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320226CB5B1F007FB68B /* ProductListPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,9 @@
 		11FD9CA52692B3A700BBCD33 /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
 		11FD9CB62692C4BE00BBCD33 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		8AEC041E26B26823000E997E /* Tutorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tutorial.playground; sourceTree = "<group>"; };
+		B66931FE26CB548E007FB68B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B669320026CB54D1007FB68B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B669320226CB5B1F007FB68B /* ProductListPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66931FD26CB51D2007FB68B /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,7 @@
 		11D5A39D26A71CF3005BD9C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B669320226CB5B1F007FB68B /* ProductListPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +113,8 @@
 		11D5A39F26A71D00005BD9C0 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				B66931FE26CB548E007FB68B /* API.swift */,
+				B669320026CB54D1007FB68B /* Network.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -197,6 +208,9 @@
 			dependencies = (
 			);
 			name = MiniMart;
+			packageProductDependencies = (
+				B66931FC26CB51D2007FB68B /* Apollo */,
+			);
 			productName = MiniMart;
 			productReference = 11FD9C5F2692A79600BBCD33 /* MiniMart.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 11FD9C562692A79600BBCD33;
+			packageReferences = (
+				B66931FB26CB51D2007FB68B /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 11FD9C602692A79600BBCD33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,9 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FD9CA62692B3A700BBCD33 /* UserDefaults+Codable.swift in Sources */,
+				B669320326CB5B1F007FB68B /* ProductListPageView.swift in Sources */,
 				1152031526A66A7500555FBE /* ContentView.swift in Sources */,
 				11FD9CB72692C4BE00BBCD33 /* RemoteImage.swift in Sources */,
 				11A47030269404B000E9C8AD /* ProcessInfo+Extension.swift in Sources */,
+				B66931FF26CB548E007FB68B /* API.swift in Sources */,
+				B669320126CB54D1007FB68B /* Network.swift in Sources */,
 				11FD9C632692A79600BBCD33 /* MiniMartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniMart/Preview Content\"";
-				DEVELOPMENT_TEAM = DE65TWVP2D;
+				DEVELOPMENT_TEAM = NPSM864R9U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MiniMart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -495,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniMart/Preview Content\"";
-				DEVELOPMENT_TEAM = DE65TWVP2D;
+				DEVELOPMENT_TEAM = NPSM864R9U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MiniMart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -634,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B66931FB26CB51D2007FB68B /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.46.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B66931FC26CB51D2007FB68B /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B66931FB26CB51D2007FB68B /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11FD9C572692A79600BBCD33 /* Project object */;
 }
