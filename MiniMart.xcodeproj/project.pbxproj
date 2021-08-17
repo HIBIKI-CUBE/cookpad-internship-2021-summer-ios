@@ -20,6 +20,8 @@
 		B66931FF26CB548E007FB68B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66931FE26CB548E007FB68B /* API.swift */; };
 		B669320126CB54D1007FB68B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320026CB54D1007FB68B /* Network.swift */; };
 		B669320326CB5B1F007FB68B /* ProductListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320226CB5B1F007FB68B /* ProductListPageView.swift */; };
+		B669320526CB7981007FB68B /* ProductDetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320426CB7981007FB68B /* ProductDetailPageView.swift */; };
+		B669320726CB7C25007FB68B /* CartPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669320626CB7C25007FB68B /* CartPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		B66931FE26CB548E007FB68B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B669320026CB54D1007FB68B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		B669320226CB5B1F007FB68B /* ProductListPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPageView.swift; sourceTree = "<group>"; };
+		B669320426CB7981007FB68B /* ProductDetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailPageView.swift; sourceTree = "<group>"; };
+		B669320626CB7C25007FB68B /* CartPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B669320226CB5B1F007FB68B /* ProductListPageView.swift */,
+				B669320426CB7981007FB68B /* ProductDetailPageView.swift */,
+				B669320626CB7C25007FB68B /* CartPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,11 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FD9CA62692B3A700BBCD33 /* UserDefaults+Codable.swift in Sources */,
+				B669320526CB7981007FB68B /* ProductDetailPageView.swift in Sources */,
 				B669320326CB5B1F007FB68B /* ProductListPageView.swift in Sources */,
 				1152031526A66A7500555FBE /* ContentView.swift in Sources */,
 				11FD9CB72692C4BE00BBCD33 /* RemoteImage.swift in Sources */,
 				11A47030269404B000E9C8AD /* ProcessInfo+Extension.swift in Sources */,
 				B66931FF26CB548E007FB68B /* API.swift in Sources */,
+				B669320726CB7C25007FB68B /* CartPageView.swift in Sources */,
 				B669320126CB54D1007FB68B /* Network.swift in Sources */,
 				11FD9C632692A79600BBCD33 /* MiniMartApp.swift in Sources */,
 			);
