@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductListPageView: View {
-    var products: [FetchProductsQuery.Data.Product]
+    @State var products: [FetchProductsQuery.Data.Product] = []
     var body: some View {
         List(products, id: \.id) { product in
             HStack(alignment: .top) {
@@ -26,6 +26,18 @@ struct ProductListPageView: View {
                 .padding(.vertical, 8)
             }
         }
+        .onAppear {
+            Network.shared.apollo.fetch(query: FetchProductsQuery()) { result in
+                switch result {
+                case let .success(graphqlResult):
+                self.products = graphqlResult.data?.products ?? []
+                case .failure:
+                    break
+                }
+                
+            }
+        }
+        .navigationTitle("MiniMart")
     }
 }
 
@@ -48,7 +60,11 @@ struct ProductListPageView_Previews: PreviewProvider {
    ]
     
     static var previews: some View {
-       ProductListPageView(products: products)
+        Group {
+            ProductListPageView(products: products)
+            ProductListPageView(products: products)
+                .previewDevice("iPad (8th generation)")
+        }
     }
 }
 
